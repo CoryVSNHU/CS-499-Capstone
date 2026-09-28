@@ -53,37 +53,128 @@
                         <div class="body">
 
                             <h1>Travel</h1>
+                            <div class="trip-search">
+    <h2>Find Your Trip</h2>
 
-                            <ul id="sites">
+    <form action="/travel" method="GET">
 
-                                {{#each trips}}
+        <div>
+            <label for="search">Search Trips</label>
+            <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Search by name or description"
+                value="{{search}}"
+            >
+        </div>
 
-                                <li>
-                                    <img src="/images/{{image}}"
-                                         alt="{{name}}">
+        <div>
+            <label for="maxPrice">Maximum Price</label>
+            <input
+                type="number"
+                id="maxPrice"
+                name="maxPrice"
+                min="0"
+                placeholder="Maximum price"
+                value="{{maxPrice}}"
+            >
+        </div>
 
-                                    <h2>{{name}}</h2>
+        <div>
+            <label for="sort">Sort Trips</label>
 
-                                    <p>
-                                        {{description}}
-                                    </p>
+            <select
+    id="sort"
+    name="sort"
+    onchange="this.form.submit()"
+>
+    <option value="">
+        Default Order
+    </option>
 
-                                    <p>
-                                        <strong>
-                                            ${{price}} per traveler
-                                        </strong>
-                                    </p>
+    <option
+        value="priceLow"
+        {{#if sortPriceLow}}selected{{/if}}
+    >
+        Price: Low to High
+    </option>
 
-                                    <p>
-                                        <a href="/travel/reservation/{{code}}">
-                                            Book This Trip
-                                        </a>
-                                    </p>
-                                </li>
+    <option
+        value="priceHigh"
+        {{#if sortPriceHigh}}selected{{/if}}
+    >
+        Price: High to Low
+    </option>
 
-                                {{/each}}
+    <option
+        value="name"
+        {{#if sortName}}selected{{/if}}
+    >
+        Name: A to Z
+    </option>
+</select>
+        </div>
 
-                            </ul>
+        <button type="submit">
+            Search
+        </button>
+
+        <a href="/travel">
+            Clear Filters
+        </a>
+
+    </form>
+</div>
+
+                            {{#if trips.length}}
+
+    <ul id="sites">
+
+        {{#each trips}}
+
+        <li>
+            <img src="/images/{{image}}"
+                 alt="{{name}}">
+
+            <h2>{{name}}</h2>
+
+            <p>
+                {{description}}
+            </p>
+
+            <p>
+                <strong>
+                    ${{price}} per traveler
+                </strong>
+            </p>
+
+            <p>
+                <a href="/travel/reservation/{{code}}">
+                    Book This Trip
+                </a>
+            </p>
+        </li>
+
+        {{/each}}
+
+    </ul>
+
+{{else}}
+
+    <div class="no-results">
+        <h2>No Trips Found</h2>
+        <p>
+            No trips matched your search criteria.
+            Try changing your search or price range.
+        </p>
+
+        <a href="/travel">
+            View All Trips
+        </a>
+    </div>
+
+{{/if}}
 
                         </div>
                     </div>

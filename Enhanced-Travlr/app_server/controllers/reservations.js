@@ -1,5 +1,7 @@
 // Temporary trip data used by the reservation workflow.
 // This will be moved to persistent storage in a later enhancement.
+
+const { getTripByCode } = require('./travlr');
 const trips = [
     {
         code: 'GALEREEF',
@@ -21,9 +23,9 @@ const trips = [
 const reservationForm = (req, res) => {
     const tripCode = req.params.code;
 
-    const trip = trips.find(
-        item => item.code === tripCode
-    );
+    // Retrieve the selected trip using the Map.
+    // Average lookup time is O(1).
+    const trip = getTripByCode(tripCode);
 
     if (!trip) {
         return res.status(404).send('Trip not found.');
@@ -39,9 +41,9 @@ const reservationForm = (req, res) => {
 const createReservation = (req, res) => {
     const tripCode = req.params.code;
 
-    const trip = trips.find(
-        item => item.code === tripCode
-    );
+    // Use the Map for direct trip lookup instead of
+    // performing a sequential search of the Array.
+    const trip = getTripByCode(tripCode);
 
     if (!trip) {
         return res.status(404).send('Trip not found.');
