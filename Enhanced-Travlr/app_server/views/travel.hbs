@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}} - Travel</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="page">
+
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img src="/images/logo.png"
+                             alt="Travlr Getaways Logo"
+                             height="100"
+                             width="200">
+                    </a>
+                </div>
+
+                <div id="navigation">
+                    <ul>
+                        <li>
+                            <a href="/index.html">Home</a>
+                        </li>
+                        <li class="selected">
+                            <a href="/travel">Travel</a>
+                        </li>
+                        <li>
+                            <a href="/rooms.html">Rooms</a>
+                        </li>
+                        <li>
+                            <a href="/meals.html">Meals</a>
+                        </li>
+                        <li>
+                            <a href="/news.html">News</a>
+                        </li>
+                        <li>
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="contents">
+                <div class="box">
+                    <div>
+                        <div class="body">
+
+                            <h1>Travel</h1>
+
+                            <ul id="sites">
+
+                                {{#each trips}}
+
+                                <li>
+                                    <img src="/images/{{image}}"
+                                         alt="{{name}}">
+
+                                    <h2>{{name}}</h2>
+
+                                    <p>
+                                        {{description}}
+                                    </p>
+
+                                    <p>
+                                        <strong>
+                                            ${{price}} per traveler
+                                        </strong>
+                                    </p>
+
+                                    <p>
+                                        <a href="/travel/reservation/{{code}}">
+                                            Book This Trip
+                                        </a>
+                                    </p>
+                                </li>
+
+                                {{/each}}
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            <div>
+                <ul class="navigation">
+                    <li>
+                        <a href="/index.html">Home</a>
+                    </li>
+
+                    <li class="active">
+                        <a href="/travel">Travel</a>
+                    </li>
+
+                    <li>
+                        <a href="/rooms.html">Rooms</a>
+                    </li>
+
+                    <li>
+                        <a href="/meals.html">Meals</a>
+                    </li>
+
+                    <li>
+                        <a href="/news.html">News</a>
+                    </li>
+
+                    <li>
+                        <a href="/about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <p>
+                © 2026 Travlr Getaways. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

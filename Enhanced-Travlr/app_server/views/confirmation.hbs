@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}} - Travlr Getaways</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+    <div id="background">
+        <div id="page">
+
+            <div id="header">
+                <div id="logo">
+                    <a href="/">
+                        <img
+                            src="/images/logo.png"
+                            alt="Travlr Getaways Logo"
+                            height="100"
+                            width="200"
+                        >
+                    </a>
+                </div>
+            </div>
+
+            <div id="contents">
+                <div class="box">
+                    <div>
+                        <div class="body">
+
+                            <h1>Reservation Confirmed</h1>
+
+                            <h2>{{reservation.tripName}}</h2>
+                            <p>
+                              <strong>Confirmation Number:</strong>
+                             {{reservation.confirmationNumber}}
+                            </p>
+
+                            <p>
+                                Thank you, {{reservation.name}}.
+                                Your reservation has been successfully processed.
+                            </p>
+
+                            <p>
+                                <strong>Email:</strong>
+                                {{reservation.email}}
+                            </p>
+
+                            <p>
+                                <strong>Travel Date:</strong>
+                                {{reservation.travelDate}}
+                            </p>
+
+                            <p>
+                                <strong>Travelers:</strong>
+                                {{reservation.travelers}}
+                            </p>
+
+                            <p>
+                                <strong>Price Per Traveler:</strong>
+                                ${{reservation.pricePerTraveler}}
+                            </p>
+
+                            <p>
+                                <strong>Total Price:</strong>
+                                ${{reservation.totalPrice}}
+                            </p>
+
+                            <p>
+                                <strong>Status:</strong>
+                                {{reservation.status}}
+                            </p>
+
+                            <p>
+                                <a href="/travel">
+                                    Return to Travel
+                                </a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
