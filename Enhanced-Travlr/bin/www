@@ -7,6 +7,7 @@
 var app = require('../app');
 var debug = require('debug')('cs-465:server');
 var http = require('http');
+const connectDB = require('../app_server/models/db');
 
 /**
  * Get port from environment and store in Express.
@@ -25,9 +26,28 @@ var server = http.createServer(app);
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
+// Connect to MongoDB before accepting HTTP requests.
+const startServer = async () => {
+    try {
+        await connectDB();
+
+        server.listen(port);
+
+        console.log('Travlr server starting...');
+    } catch (error) {
+        console.error(
+            'Unable to start Travlr:',
+            error.message
+        );
+
+        process.exitCode = 1;
+    }
+};
+
+startServer();
 
 /**
  * Normalize a port into a number, string, or false.
