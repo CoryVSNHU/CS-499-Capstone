@@ -1,68 +1,258 @@
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cory Valentine | Computer Science ePortfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cory Valentine | Computer Science ePortfolio</title>
+  <style>
+    :root {
+      --navy: #14243b;
+      --blue: #235b91;
+      --light: #f3f6fa;
+      --text: #253247;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--text);
+      background: var(--light);
+    }
+    header {
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { color: #d5e2f0; }
+    nav {
+      background: #203a59;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+    nav a:hover { text-decoration: underline; }
+    main {
+      max-width: 1050px;
+      margin: 35px auto;
+      padding: 0 20px;
+    }
+    section {
+      background: white;
+      padding: 32px;
+      margin-bottom: 28px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.07);
+    }
+    h2 { color: var(--navy); }
+    h3 { color: var(--blue); }
+    a { color: var(--blue); }
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      padding: 10px 17px;
+      margin: 8px 8px 0 0;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .button:hover { background: var(--navy); }
+    footer {
+      text-align: center;
+      background: var(--navy);
+      color: white;
+      padding: 24px;
+    }
+  </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Cory Valentine</h1>
-        <h2>Computer Science ePortfolio</h2>
-        <p>Southern New Hampshire University | CS-499 Computer Science Capstone</p>
-    </header>
+<header>
+  <h1>Cory Valentine</h1>
+  <h2>Computer Science ePortfolio</h2>
+  <p>Southern New Hampshire University | CS 499 Capstone</p>
+  <p>Software Engineering • Data Analytics • Technical Leadership</p>
+</header>
 
-    <main>
-        <section>
-            <h2>Professional Self-Assessment</h2>
-            <p>
-                Welcome to my Computer Science ePortfolio. This portfolio documents
-                my growth throughout the Computer Science program at Southern New
-                Hampshire University and demonstrates my abilities in software
-                design and engineering, algorithms and data structures, and databases.
-            </p>
-        </section>
+<nav>
+  <a href="#assessment">Self-Assessment</a>
+  <a href="#review">Code Review</a>
+  <a href="#engineering">Software Engineering</a>
+  <a href="#algorithms">Algorithms</a>
+  <a href="#databases">Databases</a>
+</nav>
 
-        <section>
-            <h2>Code Review</h2>
-            <p>
-                This section will contain my code review examining the original
-                Travlr Getaways application and identifying opportunities for
-                enhancement.
-            </p>
-        </section>
+<main>
 
-        <section>
-            <h2>Software Design and Engineering</h2>
-            <p>
-                The Travlr Getaways application will be enhanced with new
-                reservation and booking functionality.
-            </p>
-        </section>
+<section id="assessment">
+<h2>Professional Self-Assessment</h2>
+<p><strong>Cory Valentine</strong></p>
+<p><strong>Southern New Hampshire University</strong></p>
+<p><strong>Bachelor of Science in Computer Science</strong></p>
+<p><strong>CS 499 Computer Science Capstone</strong></p>
+<h3>Professional Growth and Career Development</h3>
+<p>Completing my Bachelor of Science in Computer Science at Southern New Hampshire University has been an important step in both my personal and professional development. Throughout the program, I have strengthened my technical knowledge, expanded my problem-solving abilities, and developed a greater understanding of how different areas of computer science work together. More importantly, the experience has helped me connect the technical skills I have developed in the classroom with the professional experience I have gained working in analytics, data management, and technical project coordination.</p>
+<p>Unlike someone entering the workforce for the first time, I approached this degree with an existing understanding of how technology supports business operations. My professional experience has involved working with reporting systems, analyzing operational data, coordinating technical initiatives, and helping teams address business challenges. I have worked with technologies such as SQL Server, Power BI, Spotfire, and other data and reporting tools. These experiences helped me recognize the importance of developing technical solutions that are not only functional but also practical, reliable, and understandable to the people who depend on them.</p>
+<p>Throughout my education, I have become more confident in my ability to approach complex technical problems, evaluate possible solutions, and apply what I have learned to develop working applications. My coursework also helped me recognize that computer science is much broader than programming alone. Successful technology projects require communication, planning, security awareness, effective data management, and an understanding of how technical decisions affect users and organizations.</p>
+<p>My professional goal is to continue growing into technical leadership and people management. I enjoy helping teams succeed, identifying opportunities for improvement, and finding ways to use technology to solve meaningful business problems. Completing this degree has provided me with a stronger technical foundation to support those goals while also preparing me for opportunities that require a deeper understanding of software development and computer science principles.</p>
+<h3>Collaboration, Leadership, and Stakeholder Communication</h3>
+<p>One of the strengths I bring to the computer science field is my experience working with people across different technical and business functions. Throughout my professional career, I have learned that even the best technical solution can fail if the people involved do not understand its purpose or if their needs are not considered during development.</p>
+<p>My experience coordinating technical work and supporting operational teams has taught me the importance of listening to stakeholders, identifying requirements, communicating expectations, and maintaining transparency when challenges arise. I have also had opportunities to take on leadership responsibilities, support teammates, and help coordinate priorities during periods of high demand.</p>
+<p>My approach to leadership is centered on collaboration and supporting the people around me. I believe effective leaders should be willing to listen, encourage input from their teams, and help remove obstacles that prevent others from succeeding. This approach is especially valuable in technology environments, where successful solutions often require contributions from individuals with different backgrounds and areas of expertise.</p>
+<p>My coursework reinforced these values. In my project management classes, I worked with concepts such as work breakdown structures, risk management, stakeholder communication, scheduling, and earned value analysis. These assignments helped me connect formal project management practices with the challenges I have encountered professionally.</p>
+<p>I also developed my technical communication skills through software documentation, testing reports, enhancement narratives, and project presentations. These assignments required me to explain technical concepts clearly, justify my decisions, and communicate information in a way that different audiences could understand.</p>
+<p>I believe the combination of technical knowledge, professional communication, and practical leadership experience is one of my greatest strengths as I continue developing my career.</p>
+<h3>Data Structures, Algorithms, and Problem-Solving</h3>
+<p>My computer science coursework strengthened my understanding of how data structures and algorithms influence the performance, efficiency, and maintainability of software.</p>
+<p>Earlier in the program, I worked with binary search trees and other data structures to understand how information can be stored, organized, and retrieved. These assignments helped me move beyond simply making a program work and begin evaluating whether a particular approach was appropriate for the problem being solved.</p>
+<p>I also explored artificial intelligence and reinforcement learning concepts, which introduced me to different approaches for evaluating decisions and improving outcomes through computational methods. These experiences expanded my understanding of how algorithms can be applied to problems that involve uncertainty, changing conditions, and large numbers of possible solutions.</p>
+<p>From a professional perspective, these skills connect directly to my interest in analytics and process improvement. When working with large datasets or operational reporting systems, the way information is organized and processed can significantly affect performance and usability.</p>
+<p>Throughout the program, I learned to think more carefully about computational efficiency, scalability, and the trade-offs involved in selecting different approaches. I believe this analytical mindset will continue to benefit me whether I am developing software directly or helping lead teams responsible for technical solutions.</p>
+<h3>Software Engineering and Application Development</h3>
+<p>Software engineering has been one of the most valuable areas of my education because it helped me understand how individual programming concepts come together to create complete applications.</p>
+<p>Throughout the program, I worked with multiple programming languages and development environments, including Java, C++, JavaScript, and Python. These experiences strengthened my ability to adapt to different technologies and recognize common principles across programming languages.</p>
+<p>In my software engineering coursework, I explored application architecture, testing, documentation, and the importance of translating user requirements into functional software.</p>
+<p>One example outside my capstone was the DriverPass project, which involved analyzing requirements and developing system design documentation for a driver training application. This project reinforced the importance of understanding user needs before beginning development and showed how planning and documentation contribute to successful software engineering.</p>
+<p>I also completed work involving application security and secure communication through the Artemis Financial project. That experience demonstrated how security requirements must be considered alongside functionality when designing software.</p>
+<p>My full-stack development coursework provided additional experience working with front-end and back-end technologies, APIs, and application architecture. These projects helped me better understand how user interfaces, business logic, and data management interact.</p>
+<p>One of the most important lessons I gained was the value of maintaining a clear separation of responsibilities within an application. Well-organized code is easier to test, maintain, and expand, which becomes increasingly important as systems grow in complexity.</p>
+<p>These experiences have helped prepare me to contribute to software development projects while also giving me the knowledge needed to communicate effectively with developers and evaluate technical decisions in a leadership role.</p>
+<h3>Database Design and Data Management</h3>
+<p>Database design is an area where my academic experience closely connects with my professional background.</p>
+<p>My work with SQL Server, reporting systems, and business analytics has shown me how important accurate and accessible information is to an organization. However, my computer science coursework helped me develop a deeper understanding of the underlying structures and processes used to store and manage that information.</p>
+<p>Throughout the program, I gained experience with relational database concepts, database queries, and document-oriented databases such as MongoDB. I also worked with data retrieval, validation, and application integration.</p>
+<p>These experiences helped me better understand the relationship between database design and application performance. Decisions involving schemas, indexes, relationships, and queries can have a direct impact on how effectively an application operates.</p>
+<p>I also learned that database development involves more than simply storing information. Data must be validated, organized, protected, and retrieved in ways that support the application&#39;s requirements.</p>
+<p>My background in analytics has made this area particularly meaningful to me. I enjoy working with data to identify patterns, evaluate performance, and support better decision-making. Combining that experience with a stronger understanding of database architecture has helped me become more capable of evaluating the complete process, from how information is collected to how it is ultimately used.</p>
+<h3>Security and Professional Responsibility</h3>
+<p>Another important area of growth throughout my education has been developing a stronger security mindset.</p>
+<p>Earlier in my career, I primarily viewed security as a responsibility handled by specialized teams or through established organizational processes. My computer science coursework helped me understand that security is something every developer and technical professional must consider.</p>
+<p>Through projects such as Artemis Financial, I explored secure software development practices, vulnerability identification, dependency management, and the importance of protecting information during transmission.</p>
+<p>These experiences reinforced that security should not be treated as something added after development is complete. It needs to be considered when designing applications, validating user input, managing data, and selecting third-party components.</p>
+<p>I also developed a greater appreciation for the ethical responsibilities associated with computer science. Organizations increasingly depend on software to manage sensitive information, support business decisions, and deliver essential services. Poor technical decisions can have consequences that extend beyond system performance.</p>
+<p>As I continue pursuing technical leadership opportunities, I want to maintain a strong focus on responsible development, protecting user information, and encouraging practices that support reliable and secure systems.</p>
+<h3>Introduction to My Computer Science ePortfolio</h3>
+<p>My ePortfolio represents the culmination of my computer science education and demonstrates how I have applied the skills developed throughout the program.</p>
+<p>For my capstone, I selected Travlr Getaways, a full-stack travel application originally developed during CS 465. I chose this artifact because it provided an opportunity to demonstrate several areas of computer science within a single application.</p>
+<p>Rather than presenting three unrelated projects, I wanted to show how software engineering, algorithms, data structures, and databases work together to create a more complete and effective system.</p>
+<p>The portfolio is organized around three enhancements, each addressing a different area of computer science.</p>
+<p><strong>Software Design and Engineering</strong></p>
+<p>The first enhancement focused on improving the application&#39;s architecture and expanding its functionality. I developed a dynamic travel listing page and implemented a reservation workflow that includes customer input, validation, pricing calculations, and confirmation processing.</p>
+<p>This enhancement demonstrates my ability to work with an existing application, evaluate its structure, and introduce new functionality while maintaining separation of concerns and considering the user experience.</p>
+<p><strong>Algorithms and Data Structures</strong></p>
+<p>The second enhancement focused on improving how travel information is organized and retrieved. I implemented a Map data structure for trip-code lookups and introduced searching, filtering, and sorting functionality.</p>
+<p>This enhancement demonstrates my ability to apply algorithmic thinking and select data structures that support application requirements while improving the way users interact with information.</p>
+<p><strong>Databases</strong></p>
+<p>The third enhancement focused on persistent data management. I integrated MongoDB and Mongoose, created a reservation schema, implemented database validation and indexing, and developed functionality for saving and retrieving reservation information.</p>
+<p>I also added reservation history pagination and aggregation reporting to demonstrate how stored data can be organized and analyzed.</p>
+<p>This enhancement highlights my database development skills and connects closely with my professional experience in analytics and reporting.</p>
+<p>Together, these three enhancements demonstrate how different areas of computer science support one another. The software engineering enhancement provides the application&#39;s functionality and structure, the algorithms and data structures enhancement improves how information is processed and retrieved, and the database enhancement ensures that reservation information can be stored and analyzed.</p>
+<p>The project also required me to apply testing, debugging, documentation, version control, and security practices across all three areas. By the completion of development, the application had passed nine final regression checks, and the final dependency security audit reported zero vulnerabilities.</p>
+<h3>Conclusion</h3>
+<p>Looking back on my experience at Southern New Hampshire University, I believe the greatest value of completing this degree has been the combination of technical growth and professional development.</p>
+<p>I entered the program with experience in analytics, technical coordination, and business operations. I am completing it with a stronger understanding of software engineering, algorithms, database development, application security, and the principles that support reliable computing solutions.</p>
+<p>The program has also reinforced the importance of continuous learning. Computer science is constantly evolving, and I recognize that completing a degree is not the end of my education. I intend to continue developing my technical skills, exploring emerging technologies, and strengthening my leadership abilities.</p>
+<p>My goal is to use the knowledge I have gained to help organizations develop better technical solutions while supporting the teams responsible for delivering them.</p>
+<p>I believe my combination of professional experience, technical education, analytical thinking, and collaborative leadership approach positions me to contribute meaningfully to the computer science field.</p>
+<p>This ePortfolio represents both the technical accomplishments of my capstone and the broader growth I have experienced throughout my degree program. It demonstrates not only what I have learned but also how I approach problems, evaluate solutions, and apply technology to achieve practical results.</p>
+</section>
 
-        <section>
-            <h2>Algorithms and Data Structures</h2>
-            <p>
-                The application will be enhanced with trip searching, filtering,
-                sorting, and improved data structures for efficient trip lookup.
-            </p>
-        </section>
+<section id="review">
+  <h2>Code Review</h2>
+<a class="button"
+   href="https://www.youtube.com/watch?v=FDrKWvRZ91Q"
+   target="_blank"
+   rel="noopener noreferrer">
+  Watch My Code Review
+</a>
+  <p>
+    My capstone began with an evaluation of the original Travlr
+    Getaways application. I reviewed the existing architecture,
+    identified opportunities for improvement, and developed an
+    enhancement plan covering software engineering, algorithms,
+    and databases.
+  </p>
+  <a class="button"
+     href="https://github.com/CoryVSNHU/CS-499-Capstone/tree/main/Original-Travlr">
+    View Original Application
+  </a>
+</section>
 
-        <section>
-            <h2>Databases</h2>
-            <p>
-                Database enhancements will include reservation data storage,
-                indexing, validation, and pagination to improve scalability
-                and query performance.
-            </p>
-        </section>
-    </main>
+<section id="engineering">
+  <h2>Software Design and Engineering</h2>
+<a class="button"
+   href="CS499%20Enhancement%20One%20Software%20Design%20and%20Engineering%20-%20Cory%20V.docx">
+  Read Enhancement One Narrative
+</a>
+  <p>
+    I enhanced the application with dynamic travel listings, reservation
+    routing, input validation, trusted pricing calculations, and
+    reservation confirmation pages. The implementation uses the
+    Model-View-Controller architecture to separate responsibilities
+    and improve maintainability.
+  </p>
+  <a class="button"
+     href="https://github.com/CoryVSNHU/CS-499-Capstone/tree/main/Enhanced-Travlr">
+    View Enhanced Code
+  </a>
+</section>
 
-    <footer>
-        <p>CS-499 Computer Science Capstone</p>
-    </footer>
+<section id="algorithms">
+  <h2>Algorithms and Data Structures</h2>
+<a class="button"
+   href="CS%20499%20Milestone%20Three%20Algorithms%20and%20Data%20Structures%20Narrative%20-%20Cory%20V.docx">
+  Read Enhancement Two Narrative
+</a>
+  <p>
+    I implemented Map-based trip-code lookups and introduced searching,
+    price filtering, and sorting functionality. These improvements
+    demonstrate how data structures and algorithms can support
+    more efficient data retrieval and a better user experience.
+  </p>
+  <a class="button"
+     href="https://github.com/CoryVSNHU/CS-499-Capstone/tree/main/Enhanced-Travlr">
+    View Enhanced Code
+  </a>
+</section>
+
+<section id="databases">
+  <h2>Databases</h2>
+<a class="button"
+   href="CS%20499%20Milestone%20Four%20Enhancement%20Three%20Databases%20Cory%20V.docx">
+  Read Enhancement Three Narrative
+</a>
+  <p>
+    I integrated MongoDB and Mongoose to support persistent reservation
+    storage. The enhancement includes schema validation, indexing,
+    asynchronous database operations, pagination, and aggregation
+    reporting. Final regression testing passed all nine checks,
+    and the dependency security audit reported zero vulnerabilities.
+  </p>
+  <a class="button"
+     href="https://github.com/CoryVSNHU/CS-499-Capstone/tree/main/Enhanced-Travlr">
+    View Enhanced Code
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <p>Cory Valentine | SNHU Computer Science Capstone</p>
+  <p>
+    <a href="https://github.com/CoryVSNHU/CS-499-Capstone"
+       style="color:white;">GitHub Repository</a>
+  </p>
+</footer>
 
 </body>
 </html>
+
